@@ -47,3 +47,70 @@ WC-SPRM builds a paraphrasing system in 4 major stages:
       ├── 2. Word_Cloud_Creation.ipynb # Create synonym clouds using vector radius │ 
       ├── 3. WordCloudParaphraser_FFNN.ipynb# Train FFNN on word cloud data │ 
       └── WC_SPRM_SRIP_Final.ipynb # End-to-end pipeline and evaluation ``` </pre>
+
+
+---
+
+## 🔍 Project Workflow
+
+### 1. Vocabulary Vectorization
+Generate word embeddings using a skip-gram model trained with MSE loss.
+
+### 2. Word Cloud Creation
+Extract synonyms using Datamuse API and group vectors within a 0.2 radius to form a "word cloud".
+
+### 3. FFNN Model Training
+Train a feedforward neural network to learn the mapping from parent to synonym embeddings.
+
+### 4. Paraphrasing
+For any given sentence, predict synonym embeddings and replace words to generate semantic paraphrases.
+
+---
+
+## 📌 Features
+
+- Custom word embeddings trained on input vocabulary
+- Lightweight FFNN-based synonym predictor
+- Word cloud logic for embedding proximity
+- Sentence paraphrasing at word-level granularity
+- Evaluation using Sentence-BERT cosine similarity
+- Visual comparisons with baseline embedding models
+
+---
+
+## ✅ Requirements
+
+Install dependencies using:
+
+```bash
+pip install -r requirements.txt ```bash
+🚀 How to Run
+Run 1. Vectorise_Vocabulary.ipynb to create embeddings.
+
+Run 2. Word_Cloud_Creation.ipynb to form synonym clouds.
+
+Train the model using 3. WordCloudParaphraser_FFNN.ipynb.
+
+Test the paraphrasing system using WC_SPRM_SRIP_Final.ipynb.
+
+📈 Example Output
+Input:
+A good OS is very important for any computer to work
+Output:
+ A right OS is very profound for any computer to work
+
+💡 Highlights
+Lightweight FFNN-based synonym generator
+
+Custom-trained word embedding model
+
+Embedding cloud filtering for semantic proximity
+
+Evaluated with S-BERT similarity and cosine distance
+
+Outperforms traditional models (Word2Vec, GloVe, FastText) in efficiency
+
+🧑‍💻 Author
+Developed by Kishore S
+📧 kishorespms@gmail.com
+🔗 [GitHub Profile](https://github.com/KishoreLOL21)
