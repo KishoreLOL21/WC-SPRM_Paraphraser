@@ -36,4 +36,14 @@ WC-SPRM builds a paraphrasing system in 4 major stages:
 
 ## 📂 Project Structure
 
-WC-SPRM/ │ ├── Dataraw/ │ ├── Augmented_Dataset_v2.xlsx # Parent-synonym dataset with labels │ ├── parent-synonym-embedding.csv # Training-ready parent-synonym embeddings │ ├── synonyms.csv # Extracted synonym words per parent │ └── word_vectors.csv # Trained word vectors for vocabulary │ ├── Notebooks/ │ ├── 1. Vectorise_Vocabulary.ipynb # Generate embeddings using Skip-gram │ ├── 2. Word_Cloud_Creation.ipynb # Create synonym clouds using vector radius │ ├── 3. WordCloudParaphraser_FFNN.ipynb# Train FFNN on word cloud data │ └── WC_SPRM_SRIP_Final.ipynb # End-to-end pipeline and evaluation
+WC-SPRM/ │
+   ├── Dataraw/ │ 
+      ├── Augmented_Dataset_v2.xlsx # Parent-synonym dataset with labels │
+      ├── parent-synonym-embedding.csv # Training-ready parent-synonym embeddings │
+      ├── synonyms.csv # Extracted synonym words per parent │ 
+      └── word_vectors.csv # Trained word vectors for vocabulary │
+   ├── Notebooks/ │
+      ├── 1. Vectorise_Vocabulary.ipynb # Generate embeddings using modified Skip-gram │ 
+      ├── 2. Word_Cloud_Creation.ipynb # Create synonym clouds using vector radius │ 
+      ├── 3. WordCloudParaphraser_FFNN.ipynb# Train FFNN on word cloud data │ 
+      └── WC_SPRM_SRIP_Final.ipynb # End-to-end pipeline and evaluation
