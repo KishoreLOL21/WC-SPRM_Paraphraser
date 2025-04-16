@@ -1,10 +1,10 @@
-# 🧠 WC-SPRM: Lightweight Word Cloud-Based Paraphraser
+#  WC-SPRM: Lightweight Word Cloud-Based Paraphraser
 
 WC-SPRM (**Word Cloud Synonym-based Paraphrasing using Radial Mapping**) is a lightweight, interpretable paraphrasing model designed to generate semantic paraphrases efficiently by leveraging synonym embeddings within a controlled vector space. It provides a fast and compact alternative to traditional heavy-weight language models.
 
 ---
 
-## 🚀 Overview
+##  Overview
 
 WC-SPRM builds a paraphrasing system in 4 major stages:
 
@@ -22,7 +22,7 @@ WC-SPRM builds a paraphrasing system in 4 major stages:
 
 ---
 
-## 🛠️ Features
+##  Features
 
 - ✅ Custom word embeddings
 - ✅ Synonym cloud formation using Word2Vec & Datamuse API
@@ -34,7 +34,7 @@ WC-SPRM builds a paraphrasing system in 4 major stages:
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 <pre lang="markdown"> ```WC-SPRM/ │
    ├── Dataraw/ │ 
@@ -51,7 +51,7 @@ WC-SPRM builds a paraphrasing system in 4 major stages:
 
 ---
 
-## 🔍 Project Workflow
+##  Project Workflow
 
 ### 1. Vocabulary Vectorization
 Generate word embeddings using a skip-gram model trained with MSE loss.
@@ -67,7 +67,7 @@ For any given sentence, predict synonym embeddings and replace words to generate
 
 ---
 
-## 📌 Features
+##  Features
 
 - Custom word embeddings trained on input vocabulary
 - Lightweight FFNN-based synonym predictor
@@ -84,7 +84,7 @@ Install dependencies using:
 
 ```bash
 pip install -r requirements.txt ```bash
-🚀 How to Run
+ How to Run
 Run 1. Vectorise_Vocabulary.ipynb to create embeddings.
 
 Run 2. Word_Cloud_Creation.ipynb to form synonym clouds.
@@ -93,13 +93,13 @@ Train the model using 3. WordCloudParaphraser_FFNN.ipynb.
 
 Test the paraphrasing system using WC_SPRM_SRIP_Final.ipynb.
 
-📈 Example Output
+Example Output
 Input:
 A good OS is very important for any computer to work
 Output:
  A right OS is very profound for any computer to work
 
-💡 Highlights
+ Highlights
 Lightweight FFNN-based synonym generator
 
 Custom-trained word embedding model
